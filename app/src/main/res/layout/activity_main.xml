@@ -22,7 +22,7 @@
         android:layout_height="100dp"
         android:id="@+id/two"
         android:layout_gravity="center_horizontal"
-        app:pwBarColor="@color/colorPrimary"
+        app:pwBarColor="@color/colorPrimaryDark"
         />
     <com.andras.snapchatprogressbar.SnapchatProgressBar
         android:layout_width="100dp"

@@ -20,13 +20,13 @@ public class MainActivity extends AppCompatActivity {
         one.startSpinning();
         two.startSpinning();
         three.startSpinning();
-        three.setBarColor(R.color.colorAccent);
+        three.setBarColor(getResources().getColor(R.color.colorAccent));
         four.startSpinning();
         four.setInnerBarWidth(15);
         four.setOuterBarWidth(30);
-        four.setBarColor(R.color.green);
+        four.setBarColor(getResources().getColor(R.color.green));
         five.startSpinning();
-        five.setBarColor(R.color.colorPrimaryDark);
+        five.setBarColor(getResources().getColor(R.color.colorPrimary));
         five.setSpinSpeed(16);
 
         View.OnClickListener onClickListener = new View.OnClickListener() {

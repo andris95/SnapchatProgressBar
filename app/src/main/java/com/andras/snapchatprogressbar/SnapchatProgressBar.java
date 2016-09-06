@@ -19,6 +19,8 @@ public class SnapchatProgressBar extends View {
     private int layoutWidth = 0;
     private float outerBarLength = 360 * 0.75f;
     private float innerBarLength = 180;
+    private float stoppedOuterBarLength = 360 * 0.75f;
+    private float stoppedInnerBarLength = 180;
     private float outerBarWidth = 10;
     private float innerBarWidth = 5;
 
@@ -103,6 +105,11 @@ public class SnapchatProgressBar extends View {
             canvas.drawArc(outerCircleBounds, outerProgress, outerBarLength, false, outerBarPaint);
             /**inner*/
             canvas.drawArc(innerCircleBounds, innerProgress, innerBarLength, false, innerBarPaint);
+        } else {
+            /**outer*/
+            canvas.drawArc(outerCircleBounds, outerProgress, stoppedOuterBarLength, false, outerBarPaint);
+            /**inner*/
+            canvas.drawArc(innerCircleBounds, innerProgress, stoppedInnerBarLength, false, innerBarPaint);
         }
         if (isSpinning) {
             scheduleRedraw();
