@@ -273,9 +273,11 @@ public class SnapchatProgressBar extends View {
 
     public void setBarColor(int barColor) {
         this.barColor = barColor;
-
-        if ( this.outerBarPaint != null ) {
-            this.outerBarPaint.setColor( this.barColor );
+        if (this.outerBarPaint != null) {
+            this.outerBarPaint.setColor(this.barColor);
+        }
+        if (this.innerBarPaint != null) {
+            this.innerBarPaint.setColor(this.barColor);
         }
     }
 
