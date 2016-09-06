@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SnapchatProgressBar">
+        <attr name="pwBarColor" format="color" />
+        <attr name="pwSpinSpeed" format="float" />
+        <attr name="pwOuterBarWidth" format="dimension" />
+        <attr name="pwInnerBarWidth" format="dimension" />
+        <attr name="pwDelayMillis" format="dimension"/>
+    </declare-styleable>
+</resources>
